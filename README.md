@@ -37,6 +37,8 @@ To run the Sticky Notes application locally, you'll need to have Node.js and npm
 5. To view an existing note, click on the note's title in the left-hand column. The note's content will appear in the right-hand column.
 6. Click on the Write icon in the navigation to create a new empty note.
 
+https://sticky-notes-on-38f203f22914.herokuapp.com/
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
