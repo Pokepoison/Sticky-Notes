@@ -3,7 +3,7 @@ const router = express.Router();
 const fs = require('fs');
 const path = require('path');
 
-const dbFilePath = path.join(__dirname, 'develop', 'db', 'db.json');
+const dbFilePath = path.join(__dirname, 'Develop', 'db', 'db.json');
 
 const getNotes = () => {
   const data = fs.readFileSync(dbFilePath, 'utf8');

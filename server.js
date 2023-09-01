@@ -13,11 +13,11 @@ app.use(express.static('develop/public'));
 app.use('/api', apiRoutes);
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'develop/public/index.html'));
+  res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 app.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, 'develop/public/notes.html'));
+  res.sendFile(path.join(__dirname, '../public/notes.html'));
 });
 
 app.listen(PORT, () => {
