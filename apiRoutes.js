@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 const path = require('path');
+const { v4: uuid4 } = require('uuid');
 
 const dbFilePath = path.join(__dirname, 'db', 'db.json');
 
@@ -40,7 +41,8 @@ router.get('/notes', (req, res) => {
 });
 
 router.post('/notes', (req, res) => {
-  const newNote = req.body;
+  let newNote = req.body;
+  newNote.id = uuid4();
   getNotes().then((notes) => {
     notes.push(newNote);
     saveNotes(notes).then(() => res.json(newNote));
