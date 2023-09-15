@@ -7,7 +7,8 @@ The Sticky Notes application is a simple web-based tool that allows users to wri
 ![Screenshot (25)](https://github.com/Pokepoison/first-day-demo/assets/134848930/eace7eb8-f645-48ee-83f5-35f4596171d3)
 
 
-![Screenshot (26)](https://github.com/Pokepoison/first-day-demo/assets/134848930/96ee5370-73f2-47a1-a045-e69219bb85c7)
+![Screenshot (30)](https://github.com/Pokepoison/first-day-demo/assets/134848930/6dac7d67-1cf7-4511-8300-e571aef71b0e)
+
 
 ## Table of Contents
 
