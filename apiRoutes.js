@@ -10,8 +10,13 @@ const getNotes = () => {
   // return JSON.parse(data);
   return new Promise((resolve, reject) => {
     fs.readFile(dbFilePath, 'utf8', (err, data) => {
-      if (err) reject(err);
-      else resolve(JSON.parse(data) || []);
+      if (err) { 
+        reject(err);
+      }
+      else {
+        const info = JSON.parse(data) || []
+        resolve(info);
+      }
     });
   })
 };
@@ -26,7 +31,9 @@ const saveNotes = (notes) => {
 })};
 
 router.get('/notes', (req, res) => {
-  getNotes().then((notes) => res.json(notes))
+  getNotes().then((notes) => {
+    res.json(notes)  
+  }) 
     .catch((err) => res.status(500).json(err));
     // const notes = getNotes();
   // res.json(notes);
